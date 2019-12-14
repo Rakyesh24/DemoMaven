@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="141" started-at="2019-12-01T18:58:40Z" finished-at="2019-12-01T18:58:40Z">
+  <suite name="Default suite" duration-ms="16469" started-at="2019-12-13T01:53:56Z" finished-at="2019-12-13T01:54:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="141" started-at="2019-12-01T18:58:40Z" finished-at="2019-12-01T18:58:40Z">
-      <class name="demo.TestCase1">
-        <test-method status="PASS" signature="bf()[pri:0, instance:demo.TestCase1@13deb50e]" name="bf" is-config="true" duration-ms="19" started-at="2019-12-01T18:58:40Z" finished-at="2019-12-01T18:58:40Z">
+    <test name="Default test" duration-ms="16469" started-at="2019-12-13T01:53:56Z" finished-at="2019-12-13T01:54:13Z">
+      <class name="demo.TestCase2">
+        <test-method status="PASS" signature="f()[pri:0, instance:demo.TestCase2@5442a311]" name="f" duration-ms="16345" started-at="2019-12-13T01:53:57Z" finished-at="2019-12-13T01:54:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bf -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:demo.TestCase1@13deb50e]" name="test2" duration-ms="18" started-at="2019-12-01T18:58:40Z" finished-at="2019-12-01T18:58:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-      </class> <!-- demo.TestCase1 -->
+        </test-method> <!-- f -->
+      </class> <!-- demo.TestCase2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

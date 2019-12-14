@@ -1,8 +1,11 @@
 package util;
 
+import java.io.FileInputStream;
 import java.util.List;
 import java.util.Properties;
 
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -11,13 +14,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class TestBase extends ReadProperies  {
-	
+public class TestBase extends ReadProperies {
 
 	static WebDriver driver;
 	static WebElement ele;
 	static Properties prop;
-	
+	static XSSFWorkbook wb;
+	static XSSFSheet sheet;
+
 	public static void openBrowser(String browser) {
 		driver = null;
 		try {
@@ -34,7 +38,7 @@ public class TestBase extends ReadProperies  {
 	}
 
 	public static void openurl(String url) {
-		driver.get(prop.getProperty(url));
+		driver.get(url);
 	}
 
 	public static void enterText(By by, String text) {
@@ -96,4 +100,13 @@ public class TestBase extends ReadProperies  {
 		}
 	}
 
+	public static void closeWind() {
+		driver.close();
+	}
+
+	public static void quitWind() {
+		driver.quit();
+	}
+
+	
 }

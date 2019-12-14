@@ -1,5 +1,6 @@
 package demo;
 
+import org.testng.annotations.Test;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
